@@ -1,5 +1,5 @@
 <h2>Barber Appointment System / Kuaför Randevu Sistemi</h2>
-https://github.com/metindeder/barbershop-website-with-online-shopping-and-booking-system/blob/main/README.md
+
 <h3>English</h3>
 <ul>
 <li>This project is a comprehensive barber website created using HTML, CSS, JS, and PHP.</li>
