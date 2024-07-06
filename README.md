@@ -95,7 +95,7 @@ $db_name = "berber"; //veritabani adi</code>
 
 ***
 <h2>Preview Video / Tanıtım Videosu</h2>
-
+[![preview](https://img.youtube.com/vi/wYQTlM2y96A/0.jpg)](https://www.youtube.com/watch?v=wYQTlM2y96A)
 
 ***
 bu proje METIN DEDER ve YASIN DOGAN tarafindan Siirt Üniversitesi 2023-2024 Bahar dönemi final projesi olarak hazırlanmıştır.
