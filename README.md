@@ -98,6 +98,8 @@ $db_name = "berber"; //veritabani adi</code>
 
 
 ***
+bu proje METIN DEDER ve YASIN DOGAN tarafindan Siirt Üniversitesi 2023-2024 Bahar dönemi final projesi olarak hazırlanmıştır.
+
 Projeyle ilgili daha fazla bilgi ve destek icin [metinxdeder@gmail.com](mailto:metinxdeder@gmail.com).
 
 
