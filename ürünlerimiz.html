@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ürünlerimiz</title>
+    <link rel="icon" type="image/x-icon" href="resimler/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+     /* Genel stiller */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: url('resimler/arkaplan23.jpg') no-repeat fixed;
+    background-size: cover;  
+    background-position: center;
+    /* yazi kopyalamayi engelleme */
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  -o-user-select: none;
+  user-select: none;  
+}
+
+/* Başlık ve navigasyon stil */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 105%;
+    padding: 23px 100px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    backdrop-filter: blur(5px);
+    text-shadow: 1px 1px 2px #db9334;
+}
+
+.logo {
+    padding: 0;
+    margin-top: 0;
+    margin-left: -70px;
+    height: 100px;
+    width: 250px;
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px #060606;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    position: relative;
+    left: -23px;
+    font-size: 20px;
+    color: #f6f2f2;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 60px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2.5px;
+    background: #db9334;
+    transition: .3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+/* Menu toggle button */
+.menu-toggle {
+    display: none;
+    font-size: 32px;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+    }
+
+    .navbar a {
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+}
+       
+        /* Ana içerik stil */
+      /* Container stili */
+.container {
+    position: relative; /* İçeriklerin konumunu belirle */
+    text-align: center; /* İçerikleri merkezi hizala */
+    width: 900px;
+    margin: auto;
+    max-width: 90vw;
+    text-align: center;
+    padding-top: 10px;
+    transition: transform .5s;
+}
+
+/* Arka plan resim stili */
+
+
+svg{
+    width: 30px;
+}
+.başlık{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    color: #fff;
+}
+.icon-cart{
+    position: relative;
+    cursor: pointer; /* İmleç türü */
+}
+.icon-cart span{
+    position: absolute;
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+    top: 50%;
+    right: -20px;
+}
+.icon-cart:hover{
+    color: #db9334;
+}
+.title{
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Yazı tipi */
+    font-size: 25px; /* Yazı boyutu */
+    font-weight: 1000; /* Yazı kalınlığı */
+    text-shadow: 4px 4px 6px #db9334; /* Yazı gölgesi */
+    line-height: 1.3; /* Satır yüksekliği */
+    text-transform: uppercase; /* Metni büyütme */
+    letter-spacing: 5px; /* Harf aralığı */
+    z-index: 2; /* Yığın düzeni */
+    color: #fafaf9; /* Yazı rengi */
+    box-shadow: 0 0 7px #db9334; /* Kutu gölgesi */
+}
+/*cartlardaki resimleri etkiliyor*/
+.listProduct .item img{
+    width: 90%;
+    filter: drop-shadow(0 50px 20px #0009);
+}/*cartı etkiler*/
+.listProduct{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}/*carttaki ogeeyi etkiler*/
+.listProduct .item{
+    color: #fff;
+    background-color: #ffffff36; /* Arka plan rengi */
+    backdrop-filter: blur(10px); /* Arka plan bulanıklığı */
+    padding: 20px; /* Dolgu */
+    border-radius: 20px; /* Köşe yarıçapı */
+    box-shadow: 0px 0px 4px #ff9305fb; /* Kutu gölgesi */
+}
+.listProduct .item h2{
+    font-weight: 500;
+    font-size: large;
+}/*carttaki fiyatı etkiler*/
+.listProduct .item .price{
+    letter-spacing: 7px;
+    font-size: small;
+}
+.listProduct .item button{
+    background-color: #db9334; /* Arka plan rengi */
+    cursor: pointer; /* İmleç türü */
+    color: #eee; /* Yazı rengi */
+    border: none; /* Kenarlık */
+    padding: 5px 10px; /* Dolgu */
+    margin-top: 10px; /* Üst kenar boşluğu */
+    border-radius: 20px; /* Köşe yarıçapı */
+}
+/* Product list button hover effect */
+.listProduct .item button:hover {
+    background-color: #c0710b; /* Arka plan rengi */
+}
+
+/* modal*/
+.cartTab{
+    width: 400px;
+    background-color: #3330306b;
+    color: #eee;
+    position: fixed;
+    top: 0;
+    right: -400px;
+    bottom: 0;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    transition: .5s;
+    backdrop-filter: blur(10px);
+}/*modaldaki govdeyi etkiler*/
+body.showCart .cartTab{
+    right: 0;
+}/*sağa kayma */
+body.showCart .container{
+    transform: translateX(-250px);
+}
+.cartTab h1{
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+}
+.cartTab .btn{
+   
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   
+}
+.cartTab button{
+    background-color: #db9334;
+    border: none;
+    font-family: Poppins;
+    cursor: pointer;
+    font-weight: 700;
+    border:2px solid #ffffffcb;
+    border-radius: 5px;
+    color:#eee;
+}
+.cartTab button:hover{
+    background-color:#c0710b ;
+}
+.cartTab .close{
+    background-color: #cf1010;
+color: #eee;
+font-weight: 700;
+font-size: 15px;
+    border:2px solid #ffffffcb;
+}
+.cartTab .close:hover{
+    background-color: #a30a0a;
+}/*modalin içindeki resim*/
+.listCart .item img{
+    width: 100%;
+}/*modalin içindeki liste*/
+.listCart .item{
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}/*sepetteki urunlerin miktarını ayarlamak*/
+.listCart .quantity span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+    color: #555;
+    cursor: pointer;
+}/*urun miktarını gosteren kısım*/
+.listCart .quantity span:nth-child(2){
+    background-color: transparent;
+    color: #eee;
+    cursor: auto;
+}/*sepetteki çift numaralı urunleri ayırt etmek veya ayırmak için*/
+.listCart .item:nth-child(even){
+    background-color: #eee1;
+}
+.listCart{
+    overflow: auto;
+}/*kaydırma cubugunu ilgilendiren kısm*/
+.listCart::-webkit-scrollbar{
+    width: 0;
+}
+@media only screen and (max-width: 992px) {
+    .listProduct{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+/* mobile */
+@media only screen and (max-width: 768px) {
+    .listProduct{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+             <a href="index.html">
+        <img class="logo" src="resimler/logobeyaz.png" alt="Logo">
+    </a>
+    <nav class="navbar">
+        <a href="index.html">ANASAYFA</a>
+        <a href="saçstilleri.html">SAÇ STİLLERİMİZ</a>
+        <a href="fiyatlistemiz.html">FİYAT LİSTEMİZ</a>
+        <a href="ürünlerimiz.html">ÜRÜNLERİMİZ</a>
+        <a href="hakkımızda.html">HAKKIMIZDA</a>
+    </nav>
+    <div class="menu-toggle" id="menu-toggle">
+        <i class="fas fa-bars"></i>
+    </div>
+            
+            
+        </header>
+        
+        <div class="başlık">
+            <div class="title">ÜRÜN LİSTESİ</div>
+            <div class="icon-cart">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1"/>
+                </svg>
+                <span>0</span>
+            </div>
+        </div>
+        <div class="listProduct">
+
+        </div>
+    </div>
+    <div class="cartTab">
+        <h1>SİPARİŞLERİM</h1>
+        <div class="listCart">
+            
+        </div>
+        <div class="btn">
+            <button class="close">KAPAT</button>
+            <button class="checkOut">SİPARİŞİ TAMAMLA</button>
+        </div>
+    </div>
+
+    </div>
+    
+        
+    <script>
+    
+    let listProductHTML = document.querySelector('.listProduct'); // Ürün listesini gösteren HTML elemanını seçer.
+
+let listCartHTML = document.querySelector('.listCart'); // Sepet listesini gösteren HTML elemanını seçer.
+
+let iconCart = document.querySelector('.icon-cart'); // Sepet simgesini gösteren HTML elemanını seçer.
+
+let iconCartSpan = document.querySelector('.icon-cart span'); // Sepet simgesinin içindeki miktarı gösteren HTML elemanını seçer.
+
+let body = document.querySelector('body'); // Sayfanın body elemanını seçer.
+
+let closeCart = document.querySelector('.close'); // Sepetin kapatılmasını sağlayan HTML elemanını seçer.
+
+let products = []; // Ürünlerin listesini tutmak için boş bir dizi oluşturur.
+
+let cart = []; // Sepet içeriğini tutmak için boş bir dizi oluşturur.
+
+
+iconCart.addEventListener('click', () => { // Sepet simgesine tıklama olayını dinler ve sepetin görünürlüğünü değiştirir.
+    body.classList.toggle('showCart');
+})
+
+closeCart.addEventListener('click', () => { // Sepetin kapatılmasını sağlayan HTML elemanına tıklama olayını dinler.
+    body.classList.toggle('showCart');
+})
+
+const addDataToHTML = () => { // Ürün verilerini HTML'e ekler.
+
+    // Varsayılan verileri HTML'den kaldırır.
+
+    // Yeni verileri ekler
+    if(products.length > 0) // Eğer veri varsa
+    {
+        products.forEach(product => {
+            let newProduct = document.createElement('div'); // Yeni bir ürün HTML elemanı oluşturur.
+            newProduct.dataset.id = product.id; // Ürün ID'sini veri özelliğine ekler.
+            newProduct.classList.add('item'); // 'item' sınıfını ekler.
+            newProduct.innerHTML = 
+            `<img src="${product.image}" alt=""> <!- Ürün resmini ekler.->
+            <h2>${product.name}</h2> <!-Ürün adını ekler.->
+            <div class="price">${product.price}₺</div> <!- Ürün fiyatını ekler.->
+            <button class="addCart">SEPETE EKLE</button>`; // Sepete ekle butonunu ekler.
+            listProductHTML.appendChild(newProduct); // Ürünü HTML'e ekler.
+        });
+    }
+}
+listProductHTML.addEventListener('click', (event) => { // Ürün listesindeki tıklama olayını dinler.
+    let positionClick = event.target; // Tıklanan öğeyi alır.
+    if(positionClick.classList.contains('addCart')){
+        let id_product = positionClick.parentElement.dataset.id; // Tıklanan ürünün ID'sini alır.
+        addToCart(id_product); // Sepete ürün ekler.
+    }
+})
+const addToCart = (product_id) => { // Sepete ürün ekler.
+    let positionThisProductInCart = cart.findIndex((value) => value.product_id == product_id); // Sepette bu ürünün pozisyonunu bulur.
+    if(cart.length <= 0){ // Eğer sepette ürün yoksa
+        cart = [{ // Yeni bir sepet oluşturur.
+            product_id: product_id,
+            quantity: 1
+        }];
+    }else if(positionThisProductInCart < 0){ // Eğer ürün sepette yoksa
+        cart.push({ // Sepete ürünü ekler.
+            product_id: product_id,
+            quantity: 1
+        });
+    }else{ // Ürün sepette varsa
+        cart[positionThisProductInCart].quantity = cart[positionThisProductInCart].quantity + 1; // Ürün miktarını arttırır.
+    }
+    addCartToHTML(); // Sepeti HTML'e ekler.
+    addCartToMemory(); // Sepeti belleğe ekler.
+}
+const addCartToMemory = () => { // Sepeti belleğe ekler.
+    localStorage.setItem('cart', JSON.stringify(cart)); // Sepeti yerel depolamaya ekler.
+}
+const addCartToHTML = () => { // Sepeti HTML'e ekler.
+    listCartHTML.innerHTML = ''; // Sepet içeriğini temizler.
+    let totalQuantity = 0; // Toplam ürün miktarını tutar.
+    if(cart.length > 0){ // Eğer sepette ürün varsa
+        cart.forEach(item => { // Her bir ürün için döngü oluşturur.
+            totalQuantity = totalQuantity +  item.quantity; // Toplam ürün miktarını hesaplar.
+            let newItem = document.createElement('div'); // Yeni bir sepet öğesi oluşturur.
+            newItem.classList.add('item'); // 'item' sınıfını ekler.
+            newItem.dataset.id = item.product_id; // Ürün ID'sini veri özelliğine ekler.
+
+            let positionProduct = products.findIndex((value) => value.id == item.product_id); // Ürünün konumunu bulur.
+            let info = products[positionProduct]; // Ürün bilgisini alır.
+            listCartHTML.appendChild(newItem); // Sepete öğeyi ekler.
+            newItem.innerHTML = `
+            <div class="image">
+                    <img src="${info.image}">
+                </div>
+                <div class="name">
+                ${info.name}
+                </div>
+                <div class="totalPrice">${info.price * item.quantity}₺</div>
+                <div class="quantity">
+                    <span class="minus"><</span>
+                    <span>${item.quantity}</span>
+                    <span class="plus">></span>
+                </div>
+            `; // Sepet öğesini HTML'e ekler.
+        })
+    }
+    iconCartSpan.innerText = totalQuantity; // Sepet simgesinin üzerindeki toplam ürün miktarını günceller.
+}
+
+listCartHTML.addEventListener('click', (event) => { // Sepetin tıklama olayını dinler.
+    let positionClick = event.target; // Tıklanan öğeyi alır.
+    if(positionClick.classList.contains('minus') || positionClick.classList.contains('plus')){
+        let product_id = positionClick.parentElement.parentElement.dataset.id; // Ürün ID'sini alır.
+        let type = 'minus'; // Varsayılan işlem türünü belirler.
+        if(positionClick.classList.contains('plus')){ // Eğer artı işareti tıklanmışsa
+            type = 'plus'; // Artı işlemi yapar.
+        }
+        changeQuantityCart(product_id, type); // Ürün miktarını değiştirir.
+    }
+})
+const changeQuantityCart = (product_id, type) => { // Ürün miktarını değiştirir.
+    let positionItemInCart = cart.findIndex((value) => value.product_id == product_id); // Ürünün sepet içindeki konumunu bulur.
+    if(positionItemInCart >= 0){ // Eğer ürün sepette varsa
+        let info = cart[positionItemInCart]; // Ürün bilgisini alır.
+        switch (type) { // İşlem türüne göre işlem yapar.
+            case 'plus': // Eğer artı işlemi yapılacaksa
+                cart[positionItemInCart].quantity = cart[positionItemInCart].quantity + 1; // Ürün miktarını arttırır.
+                break;
+        
+            default: // Diğer durumlar için
+                let changeQuantity = cart[positionItemInCart].quantity - 1; // Yeni miktarı hesaplar.
+                if (changeQuantity > 0) { // Eğer yeni miktar 0'dan büyükse
+                    cart[positionItemInCart].quantity = changeQuantity; // Ürün miktarını günceller.
+                }else{ // Eğer yeni miktar 0 veya daha küçükse
+                    cart.splice(positionItemInCart, 1); // Ürünü sepetteki listeden çıkarır.
+                }
+                break;
+        }
+    }
+    addCartToHTML(); // Sepeti HTML'e ekler.
+    addCartToMemory(); // Sepeti belleğe ekler.
+}
+
+const initApp = () => { // Uygulamayı başlatır.
+    // Ürün verilerini alır
+    fetch('products.json') // Ürünleri içeren JSON dosyasını alır.
+    .then(response => response.json()) // Yanıtı JSON formatına dönüştürür.
+    .then(data => { // Verileri alır
+        products = data; // Ürünleri diziye atar.
+        addDataToHTML(); // HTML'e veri ekler.
+
+        // Bellekten sepet verilerini alır
+        if(localStorage.getItem('cart')){ // Eğer sepette veri varsa
+            cart = JSON.parse(localStorage.getItem('cart')); // Sepeti yerel depolamadan alır.
+            addCartToHTML(); // Sepeti HTML'e ekler.
+        }
+    })
+}
+initApp(); // Uygulamayı başlatır.
+
+document.getElementById('menu-toggle').addEventListener('click', function() {
+        document.querySelector('.navbar').classList.toggle('active');
+    });
+    </script>
+</body>
+</html>

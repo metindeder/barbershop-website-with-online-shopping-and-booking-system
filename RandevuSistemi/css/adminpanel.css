@@ -1,0 +1,230 @@
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url("../resimler/background4.jpg")no-repeat;
+    /*background-color: #22272B;*/
+    background-position:center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+.yanpanel {
+    width: 200px;
+    height: 100vh;
+    background-color: transparent /*#16191C*/;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+    box-shadow:0 0 5px #db9334;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+
+.yanpanel-baslik {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: transparent/*#16191C*/;
+    text-align: center;
+   
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+
+
+.yanpanel-baslik i{
+    font-size: 30px;
+
+}
+
+.yanpanel-baslik .title {
+    font-size: 18px;
+    font-weight: bold;
+   
+}
+
+.yanpanel-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+    padding-top: 150px;
+    
+   
+}
+
+.menu a {
+    padding: 15px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    
+
+    
+}
+
+
+.menu.aktif, .menu:hover {
+    background-color: #db9334;
+}
+
+.menu-icon {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.yanpanel-alt {
+    padding: 20px;
+    text-align: center;
+    font-weight: 700;
+    color:#ffffff;
+   
+}
+
+.icerik {
+    margin-left: 200px;
+    padding: 20px;
+    align-items: center;
+   
+    
+}
+.icerik h1{
+ 
+ text-align: center;
+ padding-top: 50px;
+    padding-bottom: 50px;
+    
+    
+       }
+.cikis {
+    
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: 2px solid rgba(255, 255, 255, 0.354);
+    background-color:transparent /*#16191C*/;
+}
+
+.cikis:hover {
+    background-color: #e81010;
+   
+}
+
+.cikis:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(255, 75, 92, 0.5);
+   background-color: #db3434;
+}
+
+.rform {
+    width: 600px;
+    padding: 30px;
+    background-color: #0000018c;
+    border-radius: 5px;
+}
+.h4 {
+    width: 100%;
+    font-size: 23px;
+    color:black;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.rform h2 {
+    text-align: center;
+}
+
+.rform label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.rform input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.rform button {
+    width: 100%;
+    padding: 10px;
+    margin-left: 11px;
+  
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 2px solid #db9334;
+    background-color:transparent;
+}
+
+.rform button:hover {
+   
+  background-color: #db9334;
+   
+}
+
+table{
+    width: 600px;
+    padding: 30px;
+    background-color: #0000018c;
+    border-radius: 5px;
+    text-align: center;
+}
+.islem-butonlari form {
+    display: inline-block;
+}
+.islem-butonlari input[type="submit"] {
+    margin-right: 5px;
+    padding: 5px 10px;
+    border: 2px solid #ffffff4a;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+  
+}
+.islem-butonlari .sil {
+    background-color: rgba(180, 28, 28, 0);
+}
+.islem-butonlari .guncelle {
+    background-color: rgba(32, 166, 32, 0);
+}
+.islem-butonlari .guncelle:hover{
+    background-color: rgb(5, 167, 5);
+}
+.islem-butonlari .sil:hover{
+    background-color: rgb(209, 46, 46);
+}
+.randevuhata{
+    font-size: 20px;
+    padding: 50px;
+    width: 500px;
+    
+    background-color: #0000007a;
+    cursor: pointer;
+    border-radius: 3px;
+    align-items: center;
+    text-align: center;
+}
+
+

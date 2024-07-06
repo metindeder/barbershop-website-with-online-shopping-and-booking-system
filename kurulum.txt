@@ -1,0 +1,17 @@
+-Tüm dosyaları ftp sunucusuna eğer localhostta çalıştıracaksanız ilgili klasörüne(genelde ismi htdocs yada www olur.) kopyalayınız.
+-Phpmyadmine giriş yapınız.
+-berber adında veritabanı oluşturunuz.
+-Veritabanına basıp üstteki menüde yapının(ingilizce kullanıyorsanız structure) yanında sql sekmesini seçiniz.
+-RandevuSistemi klasöründeki berber.sql dosyasındaki kodları kopyalayınız.
+-Phpmyadmin sayfasına geri dönüp sql sayfasına bu kodları yapıştırıp sayfanın altındaki go tuşuna basınız.
+-Veritabanı kurulumunu tamamladınız.  
+
+
+Yönetici Giriş Bilgileri
+kullanıcı adı: admin
+şifre:4747
+
+
+
+METİN DEDER
+YASİN DOĞAN

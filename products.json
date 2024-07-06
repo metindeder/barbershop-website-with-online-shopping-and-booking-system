@@ -1,0 +1,100 @@
+[
+    {
+        "id": 1,
+        "name":"SAÇ BAKIM<br>KREMİ",
+        "price": 120,
+        "image": "resimler/1.png"
+    },
+    {
+        "id": 2,
+        "name":"3 LÜ TRAŞ <br>SETİ",
+        "price": 750,
+        "image": "resimler/2.png"
+    },
+    {
+        "id": 3,
+        "name":" TRAŞ SONRASI<br> BAKIM KREMİ",
+        "price": 85,
+        "image": "resimler/3.png"
+    },
+    {
+        "id": 4,
+        "name":"ERKEK SAÇ <br> SPREYİ",
+        "price": 80,
+        "image": "resimler/4.png"
+    },
+    {
+        "id": 5,
+        "name":"ERKEK SAÇ <br> JOLESİ",
+        "price": 130,
+        "image": "resimler/5.png"
+    },
+    {
+        "id": 6,
+        "name":"ERKEK TRAŞ <br> SETİ",
+        "price": 350,
+        "image": "resimler/6.png"
+    },
+    {
+        "id": 7,
+        "name":"SİYAH YÜZ <br> MASKESİ",
+        "price": 150,
+        "image": "resimler/7.png"
+    },
+    {
+        "id": 8,
+        "name":"DOĞAL YÜZ <br> MASKESİ",
+        "price": 170,
+        "image": "resimler/8.png"
+    },
+    {
+        "id": 9,
+        "name":" POVERTEC FON <br>MAKİNESİ",
+        "price": 450,
+        "image": "resimler/9.png"
+    },
+    {
+        "id": 10,
+        "name":"BOSCH FON <br> MAKİNESİ",
+        "price": 400,
+        "image": "resimler/10.png"
+    },
+    {
+        "id": 11,
+        "name":" ERKEK SAÇ <br>WAXI",
+        "price": 75,
+        "image": "resimler/11.png"
+    },
+    {
+        "id": 12,
+        "name":"ERKEK SAÇ <br> SPREYİ",
+        "price": 100,
+        "image": "resimler/12.png"
+    },
+    {
+        "id": 13,
+        "name":"YÜZ BAKIM <br>KREMİ",
+        "price": 95,
+        "image": "resimler/13.png"
+    },
+    {
+        "id": 14,
+        "name":"AVOKADO ÖZLÜ<br>YÜZ KREMİ",
+        "price": 125,
+        "image": "resimler/14.png"
+    },
+    {
+        "id": 15,
+        "name":"CERAVE YÜZ <br>NEMLENDİRİCİ",
+        "price": 175,
+        "image": "resimler/15.png"
+    },
+    {
+        "id": 16,
+        "name":"ERKEK GÜNEŞ<br>KREMİ",
+        "price": 360,
+        "image": "resimler/16.png"
+    }
+
+
+]
